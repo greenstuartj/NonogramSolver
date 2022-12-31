@@ -13,10 +13,10 @@ data Tree = Nil
 data Possible = W | B | Both | Not deriving Eq
 
 showPossible :: Possible -> String
-showPossible B = "  "
-showPossible W = "⬛"
-showPossible Both = " ?"
-showPossible Not  = " X"
+showPossible B = "⬛"
+showPossible W = "⬜"
+showPossible Both = "？"
+showPossible Not  = "✕"
 
 instance Show Possible where
   show = showPossible
